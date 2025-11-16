@@ -54,9 +54,9 @@ main.main-container {
 /* test */
 .main-container .content-1 {
   width: 100%;
-  height: 300px;
-  max-width: 670px;
-  /* background-color: aqua; */
+  height: 900px;
+  /* max-width: 670px;
+  background-color: aqua; */
 }
 
 /* FIELD NAMA*/
@@ -71,7 +71,8 @@ main.main-container {
 }
 
 .nama-input .field-group,
-.email-input .field-group {
+.email-input .field-group,
+.alamat-input .field-group {
   display: flex;
   flex-direction: row;
   gap: 70px;
@@ -87,7 +88,7 @@ main.main-container {
   font-size: 14px;
   width: 280px;
   height: 35px;
-  border: 1.5px solid #ccc;
+  border: 1px solid #0000009c;
   border-radius: 3px;
 }
 
@@ -137,3 +138,40 @@ main.main-container {
   width: 160px;
 }
 /* NO TELP END */
+
+/* ALAMAT */
+.alamat-input .field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.alamat-input .field-group .field {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+
+.alamat-input .field-group .field-1 input {
+  width: 100%;
+  max-width: 630px;
+}
+
+.alamat-input .field-group .field-2-group {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  max-width: 630px;
+  width: 100%;
+}
+
+.alamat-input .field-2-group .field {
+  flex: 1;
+}
+
+.alamat-input .field-2-group .field input {
+  width: 100%;
+}
+
+/* ALAMAT END */
