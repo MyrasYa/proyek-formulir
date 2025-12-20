@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Formulir Page</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <!-- header -->
+      <!--  -->
+      <div class="header">
+          <h2>Pendaftaran Keanggotaan Klub</h2>
+          <p>
+            Lengkapi formulir di bawah ini untuk mendaftar layanan keanggotaan
+            kami.
+          </p>
+          <div class="line"></div>
+      </div>
+      <!-- header end -->
+
+      <div class="wadah-konten"> 
+          <!-- CONTENT 1 -->
+          <div class="content-1">
+            <!-- NAMA INPUT -->
+            <div class="nama-input">
+            <h2>Nama</h2>
+            <div class="field-group">
+              <!-- field1 -->
+              <div class="field-1 field">
+                <label for="namaDepan" class="labels">Nama Depan</label>
+                <input type="text" id="namaDepan" />
+              </div>
+              <!-- field1 end -->
+              
+              <!-- field2 -->
+              <div class="field-2 field">
+                <label for="namaBelakang" class="labels">Nama Belakang</label>
+                <input type="text" id="namaBelakang" />
+              </div>
+            </div>
+            <!-- field2 end -->
+          </div>
+          <!-- NAMA INPUT END -->
+          
+          <!-- EMAIL INPUT  -->
+          <div class="email-input boundary-top">
+            <h2>E-Mail</h2>
+            <div class="field-group">
+              <!-- field1 -->
+              <div class="field-1 field">
+                <label for="email" class="labels">E-Mail Kamu</label>
+                <input type="email" id="email" />
+              </div>
+              <!-- field1 end -->
+              
+              <!-- field2 -->
+              <!-- <div class="field-2 field">
+                <label for="nama" class="labels">Nama Belakang</label>
+                <input type="text" id="nama" />
+              </div> -->
+            </div>
+            <!-- field2 end -->
+          </div>
+          <!-- EMAIL INPUT END -->
+          
+          <!-- NO TELP INPUT  -->
+          <div class="telp-input boundary-top">
+            <h2>No Telepon</h2>
+            <div class="field-group">
+              <!-- field1 -->
+              <div class="field-1 field">
+                <label for="area" class="labels">Kode Area</label>
+                <input type="text" id="area" value="+62" readonly />
+              </div>
+              <!-- field1 end -->
+              
+              <!-- field2 -->
+              <div class="field-2 field">
+                <label for="tel" class="labels">No Telepon</label>
+                <input type="tel" id="tel" placeholder="" />
+              </div>
+            </div>
+          </div>
+          <!-- NO TELP INPUT END -->
+          
+          <!-- ALAMAT -->
+          <div class="alamat-input boundary-top">
+            <h2>Alamat</h2>
+            <div class="field-group">
+              <!-- field1 -->
+              <div class="field-1 field">
+                <label for="alamatJalan" class="labels">Alamat Jalan</label>
+                <input type="text" id="alamatJalan" />
+              </div>
+              <!-- field1 end -->
+              
+              <div class="field-2-group">
+                <!-- field2 -->
+                <div class="field-2 field">
+                  <label for="Kota" class="labels">Kota/Kabupaten</label>
+                  <input type="text" id="Kota" />
+                </div>
+                
+                <div class="field-2 field">
+                  <label for="Provinsi" class="labels">Provinsi</label>
+                  <input type="text" id="Provinsi" />
+                </div>
+                <!-- field2 end -->
+              </div>
+              
+              <!-- field 3 -->
+              <div class="field-3 field">
+                <label for="Pos" class="labels">Kode Pos</label>
+                <input type="text" id="Pos" />
+              </div>
+              <!-- field 3 end -->
+            </div>
+            <!-- field2 end -->
+          </div>
+          <!-- ALAMAT END -->
+          
+          <!-- TANGGAL LAHIR -->
+          <div class="tanggal-lahir-input boundary-top">
+            <h2>Tanggal Lahir</h2>
+            <div class="field-group">
+              <div class="field-1 field">
+                <label for="tanggal" class="labels">Tanggal</label>
+                <input type="number" id="inputTanggal" min="1" max="31" />
+              </div>
+              
+              <div class="field-2 field">
+                <label for="bulan" class="labels">Bulan</label>
+                <input type="number" id="inputBulan" min="1" max="12" />
+              </div>
+              
+              <div class="field-3 field">
+                <label for="tahun" class="labels">Tahun</label>
+                <input type="number" id="inputTahun" min="1900" max="2025" />
+              </div>
+              
+              <input type="date" id="Kalender" >
+            </div>
+            <!-- field1 end -->
+          </div>
+          
+          <!-- TANGGAL LAHIR END -->
+          <!-- CONTENT 1 END -->
+      </div>
+        
+          <!-- CONTENT 2 -->
+          <div class="content-2">
+            <div class="info-ttg-kami boundary-top">
+              <h2>Dari mana Anda mengetahui tentang kami?</h2>
+              <div class="field-group">
+                <div class="field-1 field">
+                  <input type="checkbox" id="teman" class="checkbox-group"/>
+                  <label class="labels" for="teman">Seorang teman atau kolega</label>
+
+                  <input type="checkbox" id="google" class="checkbox-group"/>
+                  <label class="labels" for="google">Google</label>
+
+                  <input type="checkbox" id="blog" class="checkbox-group"/>
+                  <label class="labels" for="blog">Posting blog</label>
+
+                  <input type="checkbox" id="artikel" class="checkbox-group"/>
+                  <label class="labels" for="artikel">Artikel berita</label>
+                 
+                </div>
+            </div>
+            <!-- CONTENT 2 END -->
+
+            
+            <!-- CONTENT 3 -->
+            <div class="content-3">
+              <div></div>
+              <div></div>
+            </div>
+            <!-- CONTENT 3 END -->
+      </main>
+      <!-- JS -->
+      <script src="js/index.js"></script>
+    </body>
+    </html>
