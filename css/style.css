@@ -16,7 +16,7 @@ body {
 main.main-container {
   background-color: rgb(255, 255, 255);
   margin: 40px 0;
-  min-height: 1100px;
+  min-height: 1300px;
   width: 100%;
   max-width: 1200px;
   box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
@@ -98,13 +98,13 @@ main.main-container {
   border-radius: 100px;
 }
 
-.field-group input:focus,
-.field-group input:focus:hover {
+.content-1 .field-group input:focus,
+.content-1 .field-group input:focus:hover {
   border: 1.5px solid #0e82e0;
   outline: 2px solid #99a1a788;
 }
 
-.field-group input:hover {
+.content-1 .field-group input:hover {
   border: 1px solid #048eff;
   outline: 2px solid #aab5be88;
 }
@@ -187,28 +187,28 @@ main.main-container {
 /* ALAMAT END */
 
 /* TANGGAL LAHIR */
-.tanggal-lahir-input .field-group  input {
+.content-1 .tanggal-lahir-input .field-group  input {
   width: 80px;
   text-align: start;
 }
 
-.tanggal-lahir-input .field-group  .field-1 input {
+.content-1 .tanggal-lahir-input .field-group  .field-1 input {
   width: 55px;
   text-align: start;
 }
 
-.tanggal-lahir-input .field-group  .field-2 input {
+.content-1 .tanggal-lahir-input .field-group  .field-2 input {
   width: 65px;
   text-align: start;
   
 }
 
-.tanggal-lahir-input .field-group {
+.content-1 .tanggal-lahir-input .field-group {
   gap: 20px;
 }
 
 
-.tanggal-lahir-input #Kalender {
+.content-1 .tanggal-lahir-input #Kalender {
   position: relative;
   width: 4%;
   padding: 5px;
@@ -222,11 +222,12 @@ main.main-container {
   box-shadow: 1px 0.5px 1px #00000029;
   left: 2px;
 }
-.tanggal-lahir-input #Kalender {
+
+.content-1 .tanggal-lahir-input #Kalender {
   outline: none;
 }
 
-.tanggal-lahir-input #Kalender:hover {
+.content-1 .tanggal-lahir-input #Kalender:hover {
   /* background-color: #b0b8c08c; */
   box-shadow: 1px 1px 5px #0000004d;
 }
@@ -235,11 +236,13 @@ main.main-container {
 
 
 /* CONTENT 2 */
+
+/* INFO TENTANG KAMI */
 .main-container .content-2 .boundary-top {
   margin-top: 50px;
 }
 
-.content-2 .info-ttg-kami .field-group {
+.content-2 .info-ttg-kami .field-group .field-1 {
   /* background-color: aqua; */
   margin-top: 23px;
 
@@ -264,9 +267,16 @@ main.main-container {
   width: 17px;
   height: 20px;
   transform: scale(1.4);
-  outline: 1px solid #4e565c50;
-  border: 1px solid #66666829;
+  outline: none;
+  border: none;
   border-radius: 50px;
+  background-color: #d5dde47d;
+}
+
+
+.checkbox-group:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 3px #00000065;
 }
 
 .checkbox-group:checked:after {
@@ -278,4 +288,68 @@ main.main-container {
   transform: rotate(45deg);
   margin-bottom: 3px;
 } 
+/* INFO TENTANG KAMI */
+
+/* ATURAN KEANGGOTAAN */
+
+
+/* ATURAN DAN KEBIJAKAN ANGGOTA */
+
+.content-2 .info-ttg-kami .field-group .field-2, .content-2 .info-ttg-kami .field-group .field-3 {
+  margin-top: 40px;
+}
+
+.content-2 .info-ttg-kami .field-group .field-2 .line, .field-3 .line {
+   width: 200px;
+   position: relative;
+   left: 1px;
+   height: 0.3px;
+   bottom: 5px;
+}
+
+.content-2 .info-ttg-kami .field-group .field-2  p, .field-3 p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.content-2 .info-ttg-kami .field-group .field-2  #rule, .field-3 #policy {
+  margin-top: 40px;
+  width: 17px;
+}
+
+.content-2 .info-ttg-kami .field-group .field-2  #rule:checked:after, .field-3 #policy:checked:after {
+  content: "";
+  width: 7px;
+  height: 15px;
+  border: solid rgb(0, 0, 0);
+  border-width: 0 1px 1px 0; 
+  transform: rotate(45deg);
+  margin-bottom: 3px;
+}
+
+.content-2 .info-ttg-kami .field-group .field-2  #rule:hover, .field-3 #policy:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 3px #00000065;
+}
+
+.content-2 .info-ttg-kami .field-group .field-2  label {
+  font-size: 15px;
+  position: relative;
+  bottom: 25px;
+}
+
+.content-2 .info-ttg-kami .field-group .field-3  label {
+  font-size: 15px;
+  position: relative;
+  bottom: 22px;
+}
+
+.content-2 .info-ttg-kami .field-group .field-3 h2 {
+  margin-top: 40px;
+}
+
+/* ATURAN DAN KEBIJAKAN ANGGTA */
+
+
 /* CONTENT 2 */
