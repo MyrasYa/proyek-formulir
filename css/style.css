@@ -53,7 +53,7 @@ main.main-container {
 
 .main-container .wadah-konten {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 50px;
 }
 
@@ -239,7 +239,7 @@ main.main-container {
 
 /* INFO TENTANG KAMI */
 .main-container .content-2 .boundary-top {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .content-2 .info-ttg-kami .field-group .field-1 {
@@ -352,4 +352,45 @@ main.main-container {
 /* ATURAN DAN KEBIJAKAN ANGGTA */
 
 
-/* CONTENT 2 */
+/* CONTENT 3 */
+.content-3 .parag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+  background-color: rgba(76, 176, 237, 0.324);
+  padding: 0.5rem 1rem 1.5rem 1rem;
+  border-radius: 15px;
+}
+
+.content-3 p {
+  font-size: 16px;
+  margin-top: 20px;
+  color: rgba(74, 70, 70, 0.763);
+  font-style: italic;
+}
+
+
+.content-3 .button-send {
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+}
+
+.content-3 #submitBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4cb0ed;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #0000004d;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+/* CONTENT 3 END */
