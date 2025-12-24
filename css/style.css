@@ -11,6 +11,7 @@ body {
   background-color: #a5a5d464;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 main.main-container {
@@ -71,7 +72,8 @@ main.main-container {
   /* background-color: aqua; */
 }
 
-.main-container .content-1 h2, .content-2 h2 {
+.main-container .content-1 h2,
+.content-2 h2 {
   font-size: 16px;
   margin-bottom: 15px;
 }
@@ -118,20 +120,22 @@ main.main-container {
 /* FIELD NAMA*/
 
 /* EMAIL */
-.content-1 .boundary-top  {
+.content-1 .boundary-top {
   margin-top: 40px;
 }
 /* EMAIL END*/
 
 /* NO TELP */
-.telp-input .field-group, .tanggal-lahir-input .field-group {
+.telp-input .field-group,
+.tanggal-lahir-input .field-group {
   /* background-color: aqua; */
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
 
-.telp-input .field-group .field, .tanggal-lahir-input .field-group .field {
+.telp-input .field-group .field,
+.tanggal-lahir-input .field-group .field {
   display: flex;
   flex-direction: column-reverse;
   gap: 10px;
@@ -187,26 +191,24 @@ main.main-container {
 /* ALAMAT END */
 
 /* TANGGAL LAHIR */
-.content-1 .tanggal-lahir-input .field-group  input {
+.content-1 .tanggal-lahir-input .field-group input {
   width: 80px;
   text-align: start;
 }
 
-.content-1 .tanggal-lahir-input .field-group  .field-1 input {
+.content-1 .tanggal-lahir-input .field-group .field-1 input {
   width: 55px;
   text-align: start;
 }
 
-.content-1 .tanggal-lahir-input .field-group  .field-2 input {
+.content-1 .tanggal-lahir-input .field-group .field-2 input {
   width: 65px;
   text-align: start;
-  
 }
 
 .content-1 .tanggal-lahir-input .field-group {
   gap: 20px;
 }
-
 
 .content-1 .tanggal-lahir-input #Kalender {
   position: relative;
@@ -234,7 +236,6 @@ main.main-container {
 
 /* TANGGAL LAHIR END */
 
-
 /* CONTENT 2 */
 
 /* INFO TENTANG KAMI */
@@ -245,17 +246,17 @@ main.main-container {
 .content-2 .info-ttg-kami .field-group .field-1 {
   /* background-color: aqua; */
   margin-top: 23px;
-
 }
 
-.content-2 .info-ttg-kami .field-group .field input, .content-2 .info-ttg-kami .field-group .field label {
+.content-2 .info-ttg-kami .field-group .field input,
+.content-2 .info-ttg-kami .field-group .field label {
   display: flex;
   flex-direction: row;
   /* gap: 200px; */
 }
 
 .content-2 .info-ttg-kami .field-group .field label {
-  position: relative ;
+  position: relative;
   bottom: 18px;
   left: 30px;
   font-size: 15px;
@@ -273,7 +274,6 @@ main.main-container {
   background-color: #d5dde47d;
 }
 
-
 .checkbox-group:hover {
   cursor: pointer;
   box-shadow: 0px 0px 3px #00000065;
@@ -284,65 +284,70 @@ main.main-container {
   width: 7px;
   height: 15px;
   border: solid rgb(0, 0, 0);
-  border-width: 0 1px 1px 0; 
+  border-width: 0 1px 1px 0;
   transform: rotate(45deg);
   margin-bottom: 3px;
-} 
+}
 /* INFO TENTANG KAMI */
 
 /* ATURAN KEANGGOTAAN */
 
-
 /* ATURAN DAN KEBIJAKAN ANGGOTA */
 
-.content-2 .info-ttg-kami .field-group .field-2, .content-2 .info-ttg-kami .field-group .field-3 {
+.content-2 .info-ttg-kami .field-group .field-2,
+.content-2 .info-ttg-kami .field-group .field-3 {
   margin-top: 40px;
 }
 
-.content-2 .info-ttg-kami .field-group .field-2 .line, .field-3 .line {
-   width: 200px;
-   position: relative;
-   left: 1px;
-   height: 0.3px;
-   bottom: 5px;
+.content-2 .info-ttg-kami .field-group .field-2 .line,
+.field-3 .line {
+  width: 200px;
+  position: relative;
+  left: 1px;
+  height: 0.3px;
+  bottom: 5px;
 }
 
-.content-2 .info-ttg-kami .field-group .field-2  p, .field-3 p {
+.content-2 .info-ttg-kami .field-group .field-2 p,
+.field-3 p {
   font-size: 16px;
   margin-top: 20px;
   text-align: justify;
 }
 
-.content-2 .info-ttg-kami .field-group .field-2  #rule, .field-3 #policy {
+.content-2 .info-ttg-kami .field-group .field-2 #rule,
+.field-3 #policy {
   margin-top: 40px;
   width: 17px;
 }
 
-.content-2 .info-ttg-kami .field-group .field-2  #rule:checked:after, .field-3 #policy:checked:after {
+.content-2 .info-ttg-kami .field-group .field-2 #rule:checked:after,
+.field-3 #policy:checked:after {
   content: "";
   width: 7px;
   height: 15px;
   border: solid rgb(0, 0, 0);
-  border-width: 0 1px 1px 0; 
+  border-width: 0 1px 1px 0;
   transform: rotate(45deg);
   margin-bottom: 3px;
 }
 
-.content-2 .info-ttg-kami .field-group .field-2  #rule:hover, .field-3 #policy:hover {
+.content-2 .info-ttg-kami .field-group .field-2 #rule:hover,
+.field-3 #policy:hover {
   cursor: pointer;
   box-shadow: 0px 0px 3px #00000065;
 }
 
-.content-2 .info-ttg-kami .field-group .field-2  label {
+.content-2 .info-ttg-kami .field-group .field-2 label {
   font-size: 15px;
   position: relative;
-  bottom: 25px;
+  bottom: 18px;
 }
 
-.content-2 .info-ttg-kami .field-group .field-3  label {
+.content-2 .info-ttg-kami .field-group .field-3 label {
   font-size: 15px;
   position: relative;
-  bottom: 22px;
+  bottom: 18px;
 }
 
 .content-2 .info-ttg-kami .field-group .field-3 h2 {
@@ -350,7 +355,6 @@ main.main-container {
 }
 
 /* ATURAN DAN KEBIJAKAN ANGGTA */
-
 
 /* CONTENT 3 */
 .content-3 .parag {
@@ -372,10 +376,9 @@ main.main-container {
   font-style: italic;
 }
 
-
 .content-3 .button-send {
   display: flex;
-  justify-content:  center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -393,4 +396,164 @@ main.main-container {
   justify-content: start;
   align-items: center;
 }
+
+.content-3 #submitBtn:hover {
+  background-color: #3997d1;
+  box-shadow: 2px 2px 7px #0000005c;
+}
 /* CONTENT 3 END */
+
+
+/* Validate */
+ .validate {
+  z-index: 500;
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: auto;
+  left: 250px;
+  background-color: rgba(202, 223, 202, 0.3);
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 2px 10px #0000005c;
+  padding: 40px;
+  text-align: center;
+}
+
+.validate h1 {
+  font-size: 40px;
+  color: #333333;
+}
+
+.validate p {
+  font-size: 18px;
+  color: #555555;
+}
+
+.validate button {
+  color: #fff;
+  padding: 10px 50px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #487ee2;
+  border-radius: 20px;
+  box-shadow: 2px 2px 7px #0000005c;
+  transition: all 0.3s ease;
+}
+
+.validate button:hover {
+  background-color: #3997d1;
+  box-shadow: 2px 2px 7px #0000005c;
+  transform: scaleX(1.1);
+  font-size: 18px;
+}
+
+/* phone */
+@media (max-width: 500px ) {
+  .nama-input .field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main-container .content-2 .boundary-top {
+    margin-top: 100px;
+  }
+
+  .content-1 .tanggal-lahir-input #Kalender {
+    position: relative;
+    width: 9%;
+    padding: 6px;
+    height: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #d5dde47d;
+    top: 3px;
+    color: transparent;
+    transform: scale(1.5);
+    box-shadow: 1px 0.5px 1px #00000029;
+    left: 2px;
+  }
+
+  .main-container .header .line {
+    position: relative;
+    right: 12px;
+    width: 105%;
+  }
+
+  .main-container .header h2 {
+    font-size: 24px;
+  }
+
+  .validate {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    left: 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 670px) {
+  .nama-input .field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main-container .content-2 .boundary-top {
+    margin-top: 120px;
+  }
+
+  .content-1 .tanggal-lahir-input #Kalender {
+    position: relative;
+    width: 6%;
+    padding: 7px;
+    height: 26px;
+    border-radius: 50px;
+    border: none;
+    background-color: #d5dde47d;
+    top: 3px;
+    color: transparent;
+    transform: scale(1.5);
+    box-shadow: 1px 0.5px 1px #00000029;
+    left: 2px;
+  }
+
+  .main-container .header .line {
+    position: relative;
+    right: 14px;
+    width: 105%;
+  }
+
+  .main-container .header h2 {
+    font-size: 25px;
+  }
+
+  .validate {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    left: 0;
+  }
+}
+
+
+@media (min-width: 670px) {
+  .nama-input .field-group {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+  }
+
+}
+
+
