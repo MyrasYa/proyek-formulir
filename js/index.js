@@ -136,7 +136,7 @@ btnOK.addEventListener('click', function(e) {
             form.classList.remove('show');
         });
     }
-}
+});
 
 // ################################
 // FLATPICKR DATE PICKER
