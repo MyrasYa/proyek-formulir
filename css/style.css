@@ -219,7 +219,6 @@ main.main-container {
   border: none;
   background-color: #d5dde47d;
   top: 3px;
-  color: transparent;
   transform: scale(1.5);
   box-shadow: 1px 0.5px 1px #00000029;
   left: 2px;
@@ -484,7 +483,6 @@ main.main-container {
     border: none;
     background-color: #d5dde47d;
     top: 3px;
-    color: transparent;
     transform: scale(1.5);
     box-shadow: 1px 0.5px 1px #00000029;
     left: 2px;
@@ -534,7 +532,6 @@ main.main-container {
     border: none;
     background-color: #d5dde47d;
     top: 3px;
-    color: transparent;
     transform: scale(1.5);
     box-shadow: 1px 0.5px 1px #00000029;
     left: 2px;
