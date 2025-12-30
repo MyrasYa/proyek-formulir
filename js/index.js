@@ -114,38 +114,26 @@ btnOK.addEventListener('click', function(e) {
     if (!isValid) {
         form.innerHTML = '<h1>Formulir belum lengkap</h1><p>Silakan lengkapi semua bidang yang diperlukan dan setujui syarat & ketentuan serta kebijakan privasi.</p><button id="validOK">Ok</button>';
         
-        form.style.display = 'flex';
-        form.style.opacity = '1';
-        form.style.pointerEvents = 'auto';
-        form.style.transition = 'all 1s ease-in-out';
+        form.classList.add('show');
         form.scrollIntoView({ 
             behavior: 'smooth', block: 'center' 
         });
 
         const validOK = document.getElementById('validOK');
         validOK.addEventListener('click', function(e) {
-            form.style.display = 'none';
-            form.style.opacity = '0';
-            form.style.pointerEvents = 'none';
-            form.style.transition = 'all 1s ease-out';
+            form.classList.remove('show');
         });
     } else {
         form.innerHTML = '<h1>Formulir berhasil dikirim</h1><p>Selama anda telah berhasil mendaftar, perekrutan anda sedang di proses!</p><button id="validOK">Ok</button>';
         
-        form.style.display = 'flex';
-        form.style.opacity = '1';
-        form.style.pointerEvents = 'auto';
-        form.style.transition = 'all 1s ease-in-out';
+        form.classList.add('show');
         form.scrollIntoView({ 
             behavior: 'smooth', block: 'center' 
         });
 
         const validOK = document.getElementById('validOK');
         validOK.addEventListener('click', function(e) {
-            form.style.display = 'none';
-            form.style.opacity = '0';
-            form.style.pointerEvents = 'none';
-            form.style.transition = 'all 1s ease-out';
+            form.classList.remove('show');
         });
     }
 });
