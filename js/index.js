@@ -23,8 +23,8 @@ Kalender.addEventListener('change', function(e) {
             // console.log(fullOutput)
     
             Tanggal.value = tanggal;
-            Bulan.value = bulan;
             Tahun.value = tahun;
+            Bulan.value = bulan;
         }
 
     } catch (error) {
@@ -48,62 +48,97 @@ Kalender.addEventListener('change', function(e) {
 // ################################
 
 const form = document.getElementById('valid');
-const btnOK = document.getElementById('submitBtn')
+const btnOK = document.getElementById('submitBtn');
 const validOK = document.getElementById('validOK');
+const rule = document.getElementById('rule');
+const policy = document.getElementById('policy');
+
+rule.addEventListener('change', function() {
+    if (this.checked) {
+        this.style.outline = '';
+    } else {
+        this.style.outline = '1px solid red';
+    }
+});
+
+policy.addEventListener('change', function() {
+    if (this.checked) {
+        this.style.outline = '';
+    } else {
+        this.style.outline = '1px solid red';
+    }
+});
+
+const inputs = document.querySelectorAll(
+    '#namaDepan, #namaBelakang, #email, #tel, #alamatJalan, #Kota, #Provinsi, #Pos, #inputTanggal, #inputBulan, #inputTahun'
+);
+
+inputs.forEach(input => {
+    input.addEventListener('input', function() {
+        if (this.value.trim()) {
+            this.style.border = '';
+        }
+    });
+});
 
 btnOK.addEventListener('click', function(e) {
-    e.preventDefault();
     
-    const inputs = document.querySelectorAll(
-        '#namaDepan, #namaBelakang, #email, #tel, #alamatJalan, #Kota, #Provinsi, #Pos, #inputTanggal, #inputBulan, #inputTahun'
-    );
-    const rule = document.getElementById('rule');
-    const policy = document.getElementById('policy');
-
     let isValid = true;
 
     inputs.forEach(input => {
-        if (!input.value) {
+        if (!input.value.trim()) {  
             isValid = false;
-            input.style.border = '2px solid red';
+            input.style.border = '1px solid red';
         }
-    })
+    });
 
-    if (!rule.checked || !policy.checked) {
+    if (!rule.checked) {
+        rule.style.outline = '1px solid red';
         isValid = false;
-        rule.style.outline = '2px solid red';
-        policy.style.outline = '2px solid red';
+    }
+
+    if (!policy.checked) {
+        policy.style.outline = '1px solid red';
+        isValid = false;
     }
 
     if (!isValid) {
-        form.innerHTML = 
-        '<h1>Formulir belum lengkap</h1><p>Silakan lengkapi semua bidang yang diperlukan dan setujui syarat & ketentuan serta kebijakan privasi.</p><button id="validOK">Ok</button>';
+        form.innerHTML = '<h1>Formulir belum lengkap</h1><p>Silakan lengkapi semua bidang yang diperlukan dan setujui syarat & ketentuan serta kebijakan privasi.</p><button id="validOK">Ok</button>';
         
-        const validOK = document.getElementById('validOK'); 
+        form.style.display = 'flex';
+        form.style.opacity = '1';
+        form.style.pointerEvents = 'auto';
+        form.style.transition = 'all 1s ease-in-out';
+        form.scrollIntoView({ 
+            behavior: 'smooth', block: 'center' 
+        });
+
+        const validOK = document.getElementById('validOK');
         validOK.addEventListener('click', function(e) {
             form.style.display = 'none';
             form.style.opacity = '0';
             form.style.pointerEvents = 'none';
-            form.style.transition = 'all 0.3s ease-in-out';
+            form.style.transition = 'all 1s ease-out';
+        });
+    } else {
+        form.innerHTML = '<h1>Formulir berhasil dikirim</h1><p>Selama anda telah berhasil mendaftar, perekrutan anda sedang di proses!</p><button id="validOK">Ok</button>';
+        
+        form.style.display = 'flex';
+        form.style.opacity = '1';
+        form.style.pointerEvents = 'auto';
+        form.style.transition = 'all 1s ease-in-out';
+        form.scrollIntoView({ 
+            behavior: 'smooth', block: 'center' 
+        });
+
+        const validOK = document.getElementById('validOK');
+        validOK.addEventListener('click', function(e) {
+            form.style.display = 'none';
+            form.style.opacity = '0';
+            form.style.pointerEvents = 'none';
+            form.style.transition = 'all 1s ease-out';
         });
     }
-
-    console.log('ok clicked');
-    form.style.display = 'flex';
-    form.style.opacity = '1';
-    form.style.pointerEvents = 'auto';
-    form.style.transition = 'all 0.3s ease-in-out';
-    form.scrollIntoView({ 
-        behavior: 'smooth', block: 'center' 
-    });
-    
-});
-
-validOK.addEventListener('click', function(e) {
-    form.style.display = 'none';
-    form.style.opacity = '0';
-    form.style.pointerEvents = 'none';
-    form.style.transition = 'all 0.3s ease-in-out';
 });
 
 
