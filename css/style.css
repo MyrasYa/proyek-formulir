@@ -492,9 +492,9 @@ main.main-container {
 
   .validate {
     position: relative;
-    display: flex;
+    display: none !important; 
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     width: 300px;
     left: 0;
   }
@@ -538,9 +538,9 @@ main.main-container {
 
   .validate {
     position: relative;
-    display: none;
+    display: none !important; 
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     width: 300px;
     left: 0;
   }

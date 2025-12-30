@@ -61,23 +61,6 @@ const validOK = document.getElementById('validOK');
 const rule = document.getElementById('rule');
 const policy = document.getElementById('policy');
 
-// Tanggal.addEventListener('input', function() {
-//     if (this.value.trim()) {
-//         this.style.border = '';
-//     }   
-// });
-
-// Bulan.addEventListener('input', function() {
-//     if (this.value.trim()) {
-//         this.style.border = '';
-//     }   
-// });
-
-// Tahun.addEventListener('input', function() {
-//     if (this.value.trim()) {
-//         this.style.border = '';
-//     }   
-// });
 
 rule.addEventListener('change', function() {
     if (this.checked) {
