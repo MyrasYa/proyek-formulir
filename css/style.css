@@ -477,9 +477,9 @@ main.main-container {
 
   .content-1 .tanggal-lahir-input #Kalender {
     position: relative;
-    width: 5%;
-    padding: 2px;
-    height: 20px;
+    width: 11%;
+    padding: 10px;
+    height: 22px;
     border-radius: 50px;
     border: none;
     background-color: #d5dde47d;
@@ -488,7 +488,7 @@ main.main-container {
     transform: scale(1.5);
     box-shadow: 1px 0.5px 1px #00000029;
     left: 2px;
-  }
+  }s
 
   .main-container .header .line {
     position: relative;
