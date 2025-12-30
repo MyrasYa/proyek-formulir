@@ -136,7 +136,21 @@ btnOK.addEventListener('click', function(e) {
             form.classList.remove('show');
         });
     }
+}
+
+// ################################
+// FLATPICKR DATE PICKER
+// ################################
+
+flatpickr("#Kalender", {
+    dateFormat: "Y-m-d",
+    maxDate: "2025-12-31",
+    minDate: "1900-01-01"
 });
+
+// ################################
+// FLATPICKR DATE PICKER
+// ################################);
 
 
 // ################################
