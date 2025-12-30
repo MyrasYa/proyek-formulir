@@ -3,11 +3,8 @@
 // ################################
 
 const Kalender = document.getElementById('Kalender');
-
 const Tanggal = document.getElementById('inputTanggal');
-
 const Bulan = document.getElementById('inputBulan');
-
 const Tahun = document.getElementById('inputTahun');
 
 Kalender.addEventListener('change', function(e) {
@@ -25,6 +22,17 @@ Kalender.addEventListener('change', function(e) {
             Tanggal.value = tanggal;
             Tahun.value = tahun;
             Bulan.value = bulan;
+            
+            if (Tanggal.value.trim()) {
+                Tanggal.style.border = '';
+            }   
+            if (Bulan.value.trim()) {   
+                Bulan.style.border = '';    
+            }
+            if (Tahun.value.trim()) {   
+                Tahun.style.border = '';    
+            }
+            
         }
 
     } catch (error) {
@@ -52,6 +60,24 @@ const btnOK = document.getElementById('submitBtn');
 const validOK = document.getElementById('validOK');
 const rule = document.getElementById('rule');
 const policy = document.getElementById('policy');
+
+// Tanggal.addEventListener('input', function() {
+//     if (this.value.trim()) {
+//         this.style.border = '';
+//     }   
+// });
+
+// Bulan.addEventListener('input', function() {
+//     if (this.value.trim()) {
+//         this.style.border = '';
+//     }   
+// });
+
+// Tahun.addEventListener('input', function() {
+//     if (this.value.trim()) {
+//         this.style.border = '';
+//     }   
+// });
 
 rule.addEventListener('change', function() {
     if (this.checked) {
