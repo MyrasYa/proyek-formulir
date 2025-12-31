@@ -409,12 +409,12 @@ main.main-container {
   z-index: 500;
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s ease-out;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
   width: 100%;
   margin: auto;
@@ -425,10 +425,13 @@ main.main-container {
   padding: 40px;
   text-align: center;
   left: 235px;
+  right: 0;
 }
 
 .validate.show {
   display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 1;
   pointer-events: auto;
   transition: all 0.4s ease-in-out;
@@ -566,13 +569,97 @@ main.main-container {
 }
 
 
-@media (min-width: 670px) {
+@media (min-width: 670px) and (max-width: 807px) {
   .nama-input .field-group {
     display: flex;
     flex-direction: row;
     gap: 70px;
   }
 
+  .validate {
+  z-index: 500;
+  position: relative;
+  display: flex;
+  opacity: 0;
+  pointer-events: auto;
+  transition: all 0.4s ease-out;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: auto;
+  background-color: rgba(253, 255, 253, 0.3);
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+  box-shadow: 2px 2px 10px #0000005c;
+  padding: 40px;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.validate.show {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease-in-out;
+}
 }
 
 
+@media (min-width: 807px) and (max-width: 908px) {
+   .validate {
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 90%;
+    left: 40px;
+  }
+
+  .validate.show {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+
+
+@media (min-width: 909px) and (max-width: 977px) {
+   .validate {
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 80%;
+    left: 90px;
+  }
+
+  .validate.show {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+@media (min-width: 977px) and (max-width: 1081px) {
+   .validate {
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 80%;
+    left: 150px;
+  }
+
+  .validate.show {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease-in-out;
+  }
+}
