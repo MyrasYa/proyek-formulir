@@ -130,6 +130,7 @@ btnOK.addEventListener('click', function(e) {
         form.scrollIntoView({ 
             behavior: 'smooth', block: 'center' 
         });
+        
 
         const validOK = document.getElementById('validOK');
         validOK.addEventListener('click', function(e) {
